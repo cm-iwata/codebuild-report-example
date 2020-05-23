@@ -12,4 +12,4 @@ reports:
  new-report-group:
    files:
      - '**/*'
-   base-directory: reports/unit/results.xml
+   base-directory: reports/unit/
