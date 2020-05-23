@@ -7,7 +7,7 @@ phases:
     - pip install pytest
   build:
     commands:
-      - pytest tests/e2e --junit-xml=results/e2e/results.xml
+      - pytest tests/e2e --junit-xml=reports/e2e/results.xml
 reports:
  example-report-group:
    files:
