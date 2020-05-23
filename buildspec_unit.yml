@@ -1,0 +1,15 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+    commands:
+    - pip install pytest
+  build:
+    commands:
+      - pytest tests/unit --junit-xml=reports/unit/results.xml
+reports:
+ new-report-group:
+   files:
+     - '**/*'
+   base-directory: reports/unit/results.xml
